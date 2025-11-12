@@ -1,0 +1,125 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(210, 233, 210);
+    margin: 0;
+    
+
+}
+
+*{
+      
+
+
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+  
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 170px;
+    padding: 20px 30px;
+    background-color: whitesmoke;
+    height: 380px;
+    width: 420px;
+    border-radius: 50px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4em;
+    
+}
+
+
+
+#display{
+    background-color: black;
+    color: white;
+    font-size: 55px ;
+    padding: 20px 50px;
+    border-radius: 30px;
+    box-shadow: black 5px 5px 5px 5px;
+}
+
+
+#start{
+     font-size: 25px;
+    height: 60px ;
+    width: 110px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+     box-shadow: white 2px 2px 2px 2px;
+     background-color: black;
+     color: white;
+    
+   
+}
+
+#start:hover{
+     font-size: 26px;
+    height: 65px ;
+    width: 115px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+     box-shadow: white 2px 2px 2px 2px;
+       background-color:antiquewhite;
+      border:antiquewhite 1px solid ;
+    color: black;
+     transition: 0.3s;
+}
+
+#reset{
+     font-size: 25px;
+    height: 60px ;
+    width: 110px;
+     box-shadow: white 5px 5px 5px 5px;
+     border-radius: 10px;
+     background-color:antiquewhite;
+     border:antiquewhite 1px solid ;
+}
+
+#reset:hover{
+     font-size: 26px;
+    height: 65px ;
+    width: 115px;
+     box-shadow: white 5px 5px 5px 5px;
+     border-radius: 10px;
+         background-color: black;
+     color: white;
+     
+}
+
+#pause{
+     font-size: 25px;
+    height: 60px ;
+    width: 110px;
+     box-shadow: white 5px 5px 5px 2px;
+     border-radius: 10px;
+     background-color:antiquewhite;
+     border:antiquewhite 1px solid ;
+}
+
+
+#pause:hover{
+     font-size: 26px;
+    height: 65px ;
+    width: 115px;
+     box-shadow: white 5px 5px 5px 2px;
+     border-radius: 10px;
+background-color: black;
+     color: white;
+}
