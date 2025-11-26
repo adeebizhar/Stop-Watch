@@ -2,6 +2,7 @@ let display = document.getElementById("display");
 let start = document.getElementById("start");
 let pause = document.getElementById("pause");
 let reset = document.getElementById("reset");
+let lap = document.getElementById("lap");
 
 let hours = 0;
 let minutes = 0;
@@ -33,6 +34,9 @@ function showTime() {
 
 }
 
+
+
+
 function startTime() {
 
     if (timer !== null) {
@@ -61,6 +65,7 @@ function startTime() {
 
     }, 1000);
 
+
 }
 
 function pauseTime() {
@@ -81,5 +86,35 @@ function resetTime() {
 
 
 showTime();
+
+}
+
+function addLap(){
+
+    if(timer === null){
+        return;
+    }
+
+
+    var h = hours;
+    var m = minutes;
+    var s = seconds;
+
+    if(h < 10){
+        h = "0" + h;
+    }
+    if(m < 10){
+        m = "0" + m
+    }
+    if(s < 10){
+        s = "0" + s
+    }
+
+    var lapTime = h + ":" + m + ":" + s;
+
+    var li = document.createElement("li")
+    li.textContent = "Lap: " +lapTime;
+
+    lapslist.appendChild(li);
 
 }

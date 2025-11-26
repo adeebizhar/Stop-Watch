@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stop watch</title>
 
-    <link rel="stylesheet" href="style.css">
+    
 
     <!---------- google fontn 1st --------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,21 +21,37 @@
         href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Momo+Signature&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+MX+Guides&display=swap"
         rel="stylesheet">
 
+        <!-- font awesome -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- animate.css -->
+
+         <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+
+
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
     <div>
-        <h1 class="heading">Stopwatch App</h1>
-        <div class="container">
-            <div id="display">
+        <h1 class="heading animate__animated animate__fadeInUpBig">Stopwatch App</h1>
+        <div class="container animate__animated animate__zoomIn">
+            <div id="display" class="animate__animated animate__flip">
                 00 : 00 : 00
             </div>
 
             <div class="button">
-                <button id="pause" onclick="pauseTime() ">Pause</button>
-                <button id="start" onclick="startTime()">Start</button>
-                <button id="reset" onclick="resetTime() ">Reset</button>
+                <button id="pause" onclick="pauseTime() " class="animate__animated  animate__bounce">Pause</button>
+                <button id="start" onclick="startTime()" class="animate__animated animate__rubberBand"><i class="fa-solid fa-play"></i></button>
+                <button id="reset" onclick="resetTime() " class="animate__animated  animate__bounce ">Reset</button>
+                
             </div>
         </div>
     </div>
